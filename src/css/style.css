@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222831;
+    color: #ffffff;
+}
+.encabezado-datos{
+   display: flex;
+    margin: 0px;
+    padding: 0px;
+   box-shadow: 0px 2px 7px black;
+}
+.nombre{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  width:250px;
+}
+.Nombre{
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    color: rgb(11, 241, 172);
+    font-size: 30px;
+}
+.Botones{
+    position: relative;
+    margin: 10px;
+}
+.Botones-encabezado{
+    --green: #1BFD9C;
+    width: auto;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    cursor: pointer;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 3%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(3, 79, 46, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  }
+  
+  .Botones-encabezado:hover {
+    color: #017d48;
+    box-shadow: inset 0 0 10px rgba(7, 122, 72, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  .Botones-encabezado:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 3%, rgba(3, 78, 45, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  .Botones-encabezado:hover:before {
+    transform: translateX(15em);
+  }
+
+.Contenido-informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Inicio-datos{
+    border-radius: 0.5em;
+    margin: 10px;
+    padding: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #02020221;
+    box-shadow: 0 5px 7px rgba(229, 229, 229, 0.1);
+}
+.Perfil {
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+.Perfil h2{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Righteous';
+    font-size: 30px;
+  
+}
+
+.Foto-circular {
+    width: 150px; /* Ajusta el ancho según tu diseño */
+    height: 150px; /* Ajusta la altura según tu diseño */
+    border-radius: 50%; /* Hace que el borde sea redondeado para crear un círculo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que esté fuera del círculo */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    
+}
+.Foto-circular img {
+    width: 100%; /* Asegura que la imagen llene completamente el contenedor circular */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción de la imagen */
+    display: block; /* Evita el espacio adicional debajo de la imagen */
+}
+
+.Redes{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.Redes a{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+}
+.Redes a i{
+    font-size: 30px;
+    
+}
+img{
+    width: 20px;
+}
+
+
+.Informacion h3{
+    text-align: center;
+}
+
+.acerca{
+    text-align: center;
+    
+}
+
+.Informacion p{
+   
+   margin: 10px;
+   padding: 10px;
+  
+}
+.Datos-personales{
+   
+    display: flex;
+   
+}
+.Datos{
+width: auto;
+margin: 10px;
+padding: 10px;
+
+    margin-right:50px ;
+}
+.Datos_Titulo{
+    margin:0px;
+    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.etiqueta {
+    width: 150px; /* Ajusta la longitud fija para las etiquetas */
+    display: inline-block;
+    text-align: left;
+    
+    color: #017d48;
+}
+
+.valor {
+    margin-left: 20px; /* Espacio entre la etiqueta y el valor */
+   
+}
+
+.Intereses{
+    display: flex;
+    margin-left: 250PX;
+    padding: 0PX;
+    flex-direction: column;
+    
+}
+.Interes_Titulo{
+    margin: 10px;
+
+}
+.Interes_Iconos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Aquí especificamos que habrá 2 columnas */
+    margin-top: 10px;
+    padding: 10px;
+   
+    width: 350px;
+
+}
+.Interes_Iconos h4{
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0px 2px 5px black;
+}
+.Interes_Iconos h4:hover{
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #017d48;
+}
+.Interes_Iconos h4 i{
+    color: #fcfcfc;
+    font-size: 50px;
+    margin: 20px;
+ 
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Habilidades{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Habilidades-Titulo{
+    padding: 10px;
+    margin: 10px;
+}
+.Habilidades-Actuales{
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Habilidades-Tecnicas{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.Habilidades-Tecnicas-Lenguajes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ 
+
+}
+.Habilidades-Tecnicas-Lenguajes h2 i{
+    font-size: 70px;
+    margin: 20px;
+    color: #fff;
+}
+.Habilidades-Tecnicas-Lenguajes h2 img{
+    width: 70px;
+    margin: 20px;
+    color: #fff;
+}
+.Habilidades-Tecnicas-Lenguajes h2{
+   
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 130px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 2px 5px black;
+}
+.Habilidades-Tecnicas-Lenguajes h2:hover{
+    
+    cursor: pointer;
+    width: 130px;
+    margin: 10px;
+    background-color: #017d48;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Herramientas{
+   
+    display: flex;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    flex-direction: column;
+
+}
+.Herramientas_Iconos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 10px;
+
+}
+.Herramientas_Iconos h2{
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 130px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 2px 5px black;
+}
+.Herramientas_Iconos h2:hover{
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 130px;
+    margin: 10px;
+    background-color: #017d48;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 2px 5px black;
+}
+.Herramientas_Iconos h2 i{
+    font-size: 70px;
+    margin: 20px;
+}
+.Herramientas_Iconos h2 img{
+    width: 70px;
+    margin: 20px;
+}
+
+
+
