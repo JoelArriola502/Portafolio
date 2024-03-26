@@ -10,7 +10,7 @@ function Inicio(){
         <img class="Foto" src="../foto/Foto1.jpg" alt="">
      </div>
         <h2>Joél Arriola </h2>
-        <p>Ingeniero en Sistemas Administrador de Base datos Desarrollador web</p>
+        <p>Ingeniero en Sistemas, Administrador de Base datos, Desarrollador web.</p>
        <div class="Redes">
         <a href="https://www.instagram.com/joel_arriola_502?igsh=MTg4NzJnbTZueGF3Nw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com/joel.arriola.31?mibextid=LQQJ4d"> <i class="fa-brands fa-facebook"></i>
@@ -35,7 +35,7 @@ function Informacion(){
          en Sistemas de la Universidad Mariano Gálvez de Guatemala. Me apasiona la administración de bases de datos 
          y el desarrollo web, áreas en las que he adquirido experiencia práctica. Mi habilidad para trabajar con lenguajes
           de programación como JavaScript, Java y C++ me permite abordar proyectos con eficiencia y precisión. 
-        Estoy emocionado de aplicar mis conocimientos y habilidades para contribuir al éxito de futuros proyectos</p>
+        Estoy emocionado de aplicar mis conocimientos y habilidades para contribuir al éxito de futuros proyectos.</p>
     </div>
     <div class="Datos-personales">
         <div class="Datos">
@@ -106,4 +106,150 @@ function Habilidades(){
     `
     Mostrar.innerHTML=html;
 }
-document.addEventListener("DOMContentLoaded",ev=>Habilidades());
+function Portafolio(){
+  let html="";
+  html=html+` 
+  <div class="Principal-Card">
+  <h1>Mi Portafoli</h1>
+  <div class="Card-Contenido-Proyectos">
+    <div class="Card-contenedor">
+      <img class="Card-img" src="../img/Series.png">
+      <div class="Card-Titulo">
+      </div>
+      <div class="Card-Proyecto">
+          <h2>Descripción Del Proyecto</h2>
+          <div class="Descripcion" id="Descripcion">
+          <p>gestor de catálogo de series. El sistema utiliza un array para almacenar información sobre diferentes series de televisión.</p>
+        </div>
+          <div class="Card-Iconos">
+            <a href="https://github.com/JoelArriola502/TAREASERIES" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://joelarriola.neocities.org/Series/Principal" target="_blank"><i class="fa-brands fa-chrome"></i></a>
+          </div>
+    
+      </div>
+    </div>
+
+    <div class="Card-contenedor">
+      <img class="Card-img" src="../img/API.png">
+      <div class="Card-Titulo">
+      </div>
+      <div class="Card-Proyecto">
+          <h2>Descripción Del Proyecto</h2>
+          <div class="Descripcion" id="Descripcion2">
+          <p> he creado un catálogo interactivo de héroes de Marvel. Utilizando la API de Marvel Comics.</p>
+        </div>
+          <div class="Card-Iconos">
+            <a href="https://github.com/JoelArriola502/ConsumoAPI" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://joelarriola.neocities.org/ConsumoAPI/Principal" target="_blank"><i class="fa-brands fa-chrome"></i></a>
+          </div>
+         
+      </div>
+    </div>
+     
+
+    <div class="Card-contenedor">
+    <img class="Card-img" src="../img/Redsocial.png">
+    <div class="Card-Titulo">
+    </div>
+    <div class="Card-Proyecto">
+        <h2>Descripción Del Proyecto</h2>
+        <div class="Descripcion" id="Descripcion2">
+        <p>Mi proyecto consiste en una red social que permite a los usuarios seguir y dejar de seguir a otros, agregar amigos,
+           realizar publicaciones y etiquetarlas. Además, las publicaciones pueden ser comentadas por otros usuarios.</p>
+      </div>
+        <div class="Card-Iconos">
+          <a href="https://github.com/JoelArriola502/RedSocial" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-chrome"></i></a>
+        </div>
+       
+    </div>
+  </div>
+
+
+
+  <div class="Card-contenedor">
+      <img class="Card-img" src="../img/Portafolio.png">
+      <div class="Card-Titulo">
+      </div>
+      <div class="Card-Proyecto">
+          <h2>Descripción Del Proyecto</h2>
+          <div class="Descripcion" id="Descripcion2">
+          <p>Proyectos Destacados: Reflejan mi experiencia y habilidades en desarrollo web y de software, con dominio de 
+            lenguajes como Java, JavaScript (Node.js), y C++..</p>
+        </div>
+          <div class="Card-Iconos">
+            <a href="https://github.com/JoelArriola502/Portafolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-chrome"></i></a>
+          </div>
+         
+      </div>
+    </div>
+
+    </div>
+
+
+  
+  </div>
+`
+Mostrar.innerHTML=html;
+}
+
+function Contacto(){
+  let html="";
+  html=html+`
+  <div class="Contacto-Principal">
+  <h1>Contacto</h1>
+  <div class="Contacto-datos-enviar">
+     <div class="Datos-Contacto">
+        <h5> <i class="fa-solid fa-route"></i><span>Direccion:</span> Aldea Versalles Nuevo San Carlos Retalhuleu</h5>
+        <h5> <i class="fa-solid fa-phone"></i><span>Telefono:</span> +502 40823888</h5>
+        <h5> <i class="fa-solid fa-envelope"></i><span>Gmail:</span> joelarriola76@gmail.com</h5>
+     </div>
+     <div class="Datos-enviar">
+     <form id="form">
+       <label for="Nombre" class="Nombre-enviar"><i class="fa-solid fa-user"></i>
+       <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"></label>
+       <label for="Correo" class="Nombre-enviar"><i class="fa-solid fa-envelope"></i>
+       <input type="text" name="Correo" id="Correo"  placeholder="Correo"></label>
+     
+       <label for="Mensaje" class="Mensaje-enviar"><i class="fa-solid fa-message"></i>
+       <input class="Mensaje-input" type="text" name="Mensaje" id="Mensaje"  placeholder="Mensaje"></label>
+   
+     <input class="Boton-enviar" type="submit" id="button" value="Enviar Mensaje" >
+   </form>
+   
+
+     </div>
+  </div>
+
+</div>
+  
+  `
+  Mostrar.innerHTML=html;
+  Api();
+}
+
+function Api(){
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+ event.preventDefault();
+
+ btn.value = 'Sending...';
+
+ const serviceID = 'default_service';
+ const templateID = 'template_b3qok72';
+
+ emailjs.sendForm(serviceID, templateID, this)
+  .then(() => {
+    btn.value = 'Send Email';
+    alert('Sent!');
+  }, (err) => {
+    btn.value = 'Send Email';
+    alert(JSON.stringify(err));
+  });
+});
+}
+document.addEventListener("DOMContentLoaded",ev=>Inicio());
+

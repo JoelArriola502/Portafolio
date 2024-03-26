@@ -10,14 +10,14 @@
     <header class="Encabezado">
     <div class="encabezado-datos">
         <div class="nombre">
-            <h3 class="Nombre">Joél Arriola</h3>
+            <h3 class="Nombre">JA</h3>
         </div>
         <div class="Botones">
-            <button  class="Botones-encabezado" onclick="Inicio()"><i class="fa-solid fa-house"></i>Inico</button>
-            <button  class="Botones-encabezado" onclick="Informacion()"> Descripción personal</button>
-            <button  class="Botones-encabezado" onclick="Habilidades()">Habilidades</button>
-            <button  class="Botones-encabezado">Curriculo</button>
-            <button  class="Botones-encabezado">Portafolio</button>
+            <button  class="Botones-encabezado" id="Botones-encabezado" onclick="Inicio()"><i class="fa-solid fa-house"></i>Inico</button>
+            <button  class="Botones-encabezado" id="Botones-encabezado" onclick="Informacion()"> Descripción personal</button>
+            <button  class="Botones-encabezado" id="Botones-encabezado" onclick="Habilidades()">Habilidades</button>
+            <button  class="Botones-encabezado" id="Botones-encabezado" onclick="Portafolio()">Portafolio</button>
+            <button  class="Botones-encabezado" id="Botones-encabezado" onclick="Contacto()">Contacto</button>
        </div>
     </div>
 
@@ -29,4 +29,10 @@
 </body>
 <script src="../js/index.js"></script>
 <script src="https://kit.fontawesome.com/3019248dcc.js" crossorigin="anonymous"></script>
+<script src="../js/API.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">emailjs.init('txCeCtdce29PnGTBd')</script>
+</script>
 </html>

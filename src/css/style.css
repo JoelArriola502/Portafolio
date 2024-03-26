@@ -2,8 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
 }
-
+html{
+    scrollbar-width: none;
+}
 body{
     background-color: #222831;
     color: #ffffff;
@@ -13,62 +16,67 @@ body{
     margin: 0px;
     padding: 0px;
    box-shadow: 0px 2px 7px black;
+  
 }
 .nombre{
   display: flex;
   margin: 0px;
   padding: 0px;
   width:250px;
+  text-align: left;
+   justify-content: left;
+  
 }
+
 .Nombre{
     text-align: center;
     justify-content: center;
     margin: 10px;
+    padding: 10px;
     color: rgb(11, 241, 172);
     font-size: 30px;
+  
 }
 .Botones{
     position: relative;
     margin: 10px;
+    padding: 10px;
+    margin-left: 380px;
+  
+    
+   
+   
 }
 .Botones-encabezado{
-    --green: #1BFD9C;
     width: auto;
-    font-size: 15px;
-    padding: 0.7em 2.7em;
-    letter-spacing: 0.06em;
-    position: relative;
-    font-family: inherit;
-    border-radius: 0.6em;
-    overflow: hidden;
-    transition: all 0.3s;
-    line-height: 1.4em;
+    height: 50px;
+    font-weight: bold;
+    color: #fff;
     cursor: pointer;
-    border: 2px solid var(--green);
-    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 3%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
-    color: var(--green);
-    box-shadow: inset 0 0 10px rgba(3, 79, 46, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
-  }
-  
-  .Botones-encabezado:hover {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background: transparent;
+    margin-left: 8px;
+    box-shadow: 0px 2px 5px #5198ce7c;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+}
+
+.Botones-encabezado:hover{
+    width: auto;
+    height: 50px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
     color: #017d48;
-    box-shadow: inset 0 0 10px rgba(7, 122, 72, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
-  }
-  
-  .Botones-encabezado:before {
-    content: "";
-    position: absolute;
-    left: -4em;
-    width: 4em;
-    height: 100%;
-    top: 0;
-    transition: transform .4s ease-in-out;
-    background: linear-gradient(to right, transparent 3%, rgba(3, 78, 45, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
-  }
-  
-  .Botones-encabezado:hover:before {
-    transform: translateX(15em);
-  }
+    background: transparent;
+    box-shadow: 0px 2px 5px #017d48;
+
+}
 
 .Contenido-informacion{
     display: flex;
@@ -85,7 +93,7 @@ body{
     align-items: center;
     text-align: center;
     background-color: #02020221;
-    box-shadow: 0 5px 7px rgba(229, 229, 229, 0.1);
+    box-shadow: 0 5px 7px rgba(23, 124, 160, 0.384);
 }
 .Perfil {
     display: flex; /* Usa flexbox para alinear elementos */
@@ -97,7 +105,6 @@ body{
 .Perfil h2{
     padding: 10px;
     margin: 10px;
-    font-family: 'Righteous';
     font-size: 30px;
   
 }
@@ -131,8 +138,17 @@ body{
 }
 .Redes a i{
     font-size: 30px;
+    color: #FFF;
+    
     
 }
+.Redes a i:hover{
+    font-size: 30px;
+    color: #1fcb1682;
+    
+    
+}
+
 img{
     width: 20px;
 }
@@ -369,3 +385,224 @@ li {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.Principal-Card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.Card-Contenido-Proyectos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.Card-img{
+    width:280px;
+    height: 150px;
+    background-size: 100%;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.Card-contenedor{
+   border-radius: 0.5em;
+   margin: 10px;
+   padding: 10px;
+   text-align: center;
+   
+}
+.Card-Proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4c6a9786;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding-bottom: 15px;
+    margin-top: -4px;
+
+  
+}
+.Card-Iconos{
+    margin: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.Card-Iconos a i{
+    font-size: 25px;
+    color: #fff;
+    margin: 10px;
+}
+.Card-Iconos a i:hover{
+    font-size: 25px;
+    color: #fff;
+    margin: 10px;
+    background-color: #017d48;
+    border-radius: 50%;
+}
+.Descripcion{
+    margin-top: 10px;
+    width: 250px;
+    text-align: justify;
+    height: 110px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+.Contacto-Principal{
+    display: flex;
+    flex-direction: column;
+}
+.Contacto-datos-enviar{
+    display: flex;
+   
+    margin-top: 25px;
+
+}
+.Datos-Contacto{
+    box-shadow: 0px 1px 7px rgb(4, 4, 4);
+    margin-rigth: 20px;
+    padding: 20px;
+    width: auto;
+}
+.Datos-Contacto h5 span{
+    color: #017d48;
+    gap: 5px;
+}
+.Datos-Contacto h5 i{
+    margin-right:10px;
+    font-size: 20px;
+}
+.Datos-Contacto h5{
+    width: auto;
+    margin: 10px;
+    
+    gap: 5px;
+}
+
+
+.Datos-enviar{
+    box-shadow: 0px 2px 5px black;
+    margin-left: 10px;
+    padding: 20px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.Nombre-enviar{
+    display: flex;
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 2px 5px black;
+}
+input{
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    width: 180px;
+    height: 30px;
+    
+   list-style: none;
+   border-style: none;
+   outline: none;
+
+
+
+}
+
+.Mensaje-enviar{
+    height: 100px;
+    display: flex;
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 2px 5px black;
+
+}
+.Mensaje-input{
+
+    height: 100px;
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    width: 180px;
+    height: 30px;
+    
+   list-style: none;
+   border-style: none;
+   outline: none;
+
+}
+.Boton-enviar{
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFF;
+    box-shadow: 0px 2px 5px rgba(57, 52, 195, 0.529);
+    border-radius: 0.5em;
+
+}
+
+
+
+.Boton-enviar:hover{
+    width: auto;
+    height: 52px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #017d48;
+    background: transparent;
+    box-shadow: 0px 2px 5px #017d48;
+
+}
